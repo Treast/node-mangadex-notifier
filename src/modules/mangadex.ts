@@ -42,7 +42,11 @@ class Mangadex {
   }
 
   public async getUserFeedSince() {
-    const lastUpdate = '2024-03-23T21:10:02'; //config.get('last_update');
+    const lastUpdate = config.get('last_update');
+
+    config.set('last_update', new Date().toISOString().split('.')[0]);
+
+    if (!lastUpdate) return;
 
     const response = await axios({
       headers: Auth.injectAuthHeaders(),
