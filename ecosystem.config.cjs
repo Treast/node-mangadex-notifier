@@ -3,7 +3,6 @@ module.exports = {
     {
       name: 'mangadex-notifier',
       script: 'dist/app.js',
-      instances: 1,
       cron_restart: '*/15 * * * *',
       env: {
         NODE_ENV: 'development'
