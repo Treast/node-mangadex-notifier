@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'MangaDex Notifier',
+      name: 'mangadex-notifier',
       script: 'dist/app.js',
       instances: 1,
       cron_restart: '*/15 * * * *',
