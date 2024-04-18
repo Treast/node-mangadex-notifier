@@ -4,7 +4,7 @@ module.exports = {
       name: 'MangaDex Notifier',
       script: 'dist/app.js',
       instances: 1,
-      cron_restart: '0 0 * * *',
+      cron_restart: '*/15 * * * *',
       env: {
         NODE_ENV: 'development'
       },
