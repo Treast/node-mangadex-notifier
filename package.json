@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A NodeJS script that notify through Discord when a new MangaDex chapter is available",
   "scripts": {
+    "build": "tsc",
     "watch": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
