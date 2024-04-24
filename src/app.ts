@@ -5,7 +5,7 @@ import Notifier from './modules/notifier.js';
 
 configDotenv();
 
-await Auth.getAccessToken();
+await Auth.fetchAccessToken();
 
 const feed = await Mangadex.getUserFeedSince();
 
