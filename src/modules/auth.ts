@@ -56,7 +56,7 @@ class Auth {
     return { ...headers, Authorization: `Bearer ${this.accessToken}` };
   }
 
-  private async fetchAccessToken(): Promise<string> {
+  public async fetchAccessToken(): Promise<string> {
     this.refreshedAt = Date.now();
 
     try {
